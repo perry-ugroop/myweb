@@ -1,7 +1,7 @@
+import home from './routes/home';
+
 const setup = (app) => {
-  app.get('/', (req, res) => {
-    res.render('index');
-  });
+  app.use('/', home);
 };
 
 export default { setup };
