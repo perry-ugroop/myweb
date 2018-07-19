@@ -25,3 +25,28 @@ h1 {
 p {
     margin-bottom: 0.5em;
 }
+
+form {
+    margin: 1em 0;
+}
+
+.form-row {
+    margin-bottom: 0.5em;
+}
+
+.form-row label {
+    display: inline-block;
+    width: 80px;
+}
+
+.button-row {
+    margin-top: 1em;
+}
+
+#signin #txt-email {
+    width: 300px;
+}
+
+#signin #txt-password {
+    width: 150px;
+}
