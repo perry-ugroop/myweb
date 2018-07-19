@@ -10,3 +10,18 @@ body {
     margin: 2px auto;
 }
 
+h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+
+p {
+    margin-bottom: 0.5em;
+}
