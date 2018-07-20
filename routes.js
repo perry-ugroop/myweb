@@ -1,9 +1,10 @@
 import home from './routes/home';
 import signin from './routes/siginin';
+import util from './lib/appUtils'
 
 const setup = (app) => {
-  app.use('/', home);
-  app.use('/signin', signin);
+  util.setRoute(app, '/', home);
+  util.setRoute(app, '/signin', signin);
 };
 
 export default { setup };

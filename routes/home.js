@@ -1,10 +1,10 @@
 import express from 'express';
+import viewUtils from '../lib/viewUtils';
 
 const router = express.Router();
 
 router.get('/', (req, res) => {
-  res.set('Content-Type', 'text/html; charset="utf-8"');
-  res.render('home');
+  viewUtils.renderPage(res, 'home');
 });
 
 export default router;
