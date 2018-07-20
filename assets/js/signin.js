@@ -1,5 +1,24 @@
 function signin () {
-  alert('Signed In!');
+  var email = document.getElementById('txt-email').value;
+  var password = document.getElementById('txt-password').value;
+
+  var loginUrl = config.apiUrl + '/users/login';
+
+  fetch(loginUrl, {
+    credentials: 'same-origin',
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ username: email, password: password }),
+  })
+  .then(function (data) {
+    console.log('Success: ', data);
+  })
+  .catch(function (err) {
+    console.log('Error: ', err);
+  })
+  ;
 }
 
 var btnSignIn = document.getElementById('btn-signin');
