@@ -12,8 +12,11 @@ function signin () {
     },
     body: JSON.stringify({ username: email, password: password }),
   })
+  .then(function (res) {
+    return res.json();
+  })
   .then(function (data) {
-    console.log('Success: ', data);
+    console.log('data.body: ', data);
   })
   .catch(function (err) {
     console.log('Error: ', err);
