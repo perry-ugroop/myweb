@@ -7,8 +7,18 @@
   <link rel="stylesheet" href="css/styles.css" />
   <script src="js/es6-promise.min.js"></script>
   <script src="js/fetch.js"></script>
+  <script src="js/localforage.min.js"></script>
   <script>
       var config = {{{config}}};
+
+      localforage.config({
+        driver: [localforage.INDEXEDDB, localforage.LOCALSTORAGE],
+        name: 'myApp',
+        version: 1.0,
+        size: 4980736, // Size of database, in bytes. WebSQL-only for now.
+        storeName: 'localStore', // Should be alphanumeric, with underscores.
+        description: 'ugroopLocalStore',
+      });
   </script>
 </head>
 <body>
