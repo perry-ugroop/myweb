@@ -22,7 +22,9 @@ function signin () {
     } else {
       console.log('localStorage not supported');
     }
-      console.log('data.body: ', data);
+
+    console.log('data.body: ', data);
+    edtResult.value = JSON.stringify(data, null, 2);
   })
   .catch(function (err) {
     console.log('Error: ', err);
@@ -31,5 +33,6 @@ function signin () {
 }
 
 var btnSignIn = document.getElementById('btn-signin');
+var edtResult = document.getElementById('edt-result');
 
 btnSignIn.addEventListener('click', signin);

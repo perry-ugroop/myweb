@@ -10,13 +10,19 @@ body {
     margin: 2px auto;
 }
 
-h1, p {
+h1, h2, p {
     margin: 0;
     padding: 0;
 }
 
 h1 {
     font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 1.2em;
     font-weight: 600;
     margin-bottom: 0.5em;
 }
@@ -50,3 +56,13 @@ form {
 #signin #txt-password {
     width: 150px;
 }
+
+#signin-result-section {
+    margin-top: 2em;
+}
+
+#signin-result-section textarea {
+    width: 840px;
+    height: 400px;
+}
+
